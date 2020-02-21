@@ -34,7 +34,6 @@ for filename in files.keys() :
     import numpy as np 
     import bisect
     from random import randrange
-    import time
     
     sums = np.cumsum(types).tolist()
     bisect.insort(sums, m) 
@@ -49,7 +48,6 @@ for filename in files.keys() :
     del sums[sums.index(m)]
     
  
-    start_time = time.time()
     
     while err > max_err:
         
